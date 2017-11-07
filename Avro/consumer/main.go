@@ -15,7 +15,7 @@ import (
 func main() {
 
 	//addresses of available kafka brokers
-	brokers := []string{"rm-be-k8k73.beta.local:9092", "rm-be-k8k74.beta.local:9092", "rm-be-k8k75.beta.local:9092"}
+	brokers := []string{"broker1:9092", "broker2:9092"}
 
 	consumer, err := sarama.NewConsumer(brokers, nil)
 
