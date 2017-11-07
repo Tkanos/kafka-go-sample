@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-	zookeper := "rm-be-k8z70.beta.local:2181,rm-be-k8z71.beta.local:2181,rm-be-k8z72.beta.local:2181"
+	zookeper := "zook1:2181,rzook2:2181"
 	topics := "users-domain-api"
 	groupsName := "users-group"
 	consumer, err := NewConsumer(zookeper, groupsName, topics)
